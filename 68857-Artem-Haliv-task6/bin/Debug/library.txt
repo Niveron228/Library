@@ -1,0 +1,4 @@
+PaperBook$Artem$Educational$Paper book$12345$567
+EBook$Author$Category$e-book$Format$123
+AudioBook$Author$Category$audio book$Narrator$123
+Java$Edip$Programming$audio book$Edip$567
