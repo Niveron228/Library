@@ -150,10 +150,6 @@ namespace _68857_Artem_Haliv_task6
                     MessageBox.Show("Invalid line format in the file.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else
-            {
-                MessageBox.Show("End of file reached.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -176,7 +172,7 @@ namespace _68857_Artem_Haliv_task6
 
         private void button4_Click(object sender, EventArgs e)
         {
-            int lineNumberToRemove = rowindex + 1;
+            int lineNumberToRemove = rowindex;
             string filePath = "library.txt";
             string tempFilePath = "Temp.txt";
 

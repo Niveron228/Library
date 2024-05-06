@@ -24,7 +24,6 @@ namespace _68857_Artem_Haliv_task6
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            //back to main menu
             Form1 f1 = new Form1();
             this.Hide();
             f1.ShowDialog();
@@ -33,7 +32,6 @@ namespace _68857_Artem_Haliv_task6
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //determining the type of book and activating the corresponding groupbox
             switch (cbtype.SelectedItem.ToString())
             {
                 case "Paper book":
@@ -54,7 +52,6 @@ namespace _68857_Artem_Haliv_task6
 
         private void buttonpaper_Click_1(object sender, EventArgs e)
         {
-            //Creating new Paper Book
             PaperBook pb = new PaperBook(
                 tbtitle.Text,
                 tbauthor.Text,
@@ -64,7 +61,6 @@ namespace _68857_Artem_Haliv_task6
                 int.Parse(tbpages.Text)
             );
 
-            //Call AddPaperBook method to add the book
             pb.AddPaperBook(pb.Title, pb.Author, pb.Category, pb.Type, pb.ISBN, pb.NumberOfPages);
 
             MessageBox.Show("PaperBook added successfully!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -73,7 +69,6 @@ namespace _68857_Artem_Haliv_task6
 
         private void buttonebook_Click_1(object sender, EventArgs e)
         {
-            //Creating new EBook
             EBook eb = new EBook(
                 tbtitle.Text,
                 tbauthor.Text,
@@ -83,7 +78,6 @@ namespace _68857_Artem_Haliv_task6
                 int.Parse(tbsize.Text)
             );
 
-            //Call AddPaperBook method to add the book
             eb.AddPaperBook(eb.Title, eb.Author, eb.Category, eb.Type, eb.Format, Convert.ToInt32(eb.FileSize));
 
             MessageBox.Show("E-Book added successfully!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -91,7 +85,6 @@ namespace _68857_Artem_Haliv_task6
 
         private void buttonaudio_Click_1(object sender, EventArgs e)
         {
-            //Creating new Audio Book
             AudioBook ab = new AudioBook(
                 tbtitle.Text,
                 tbauthor.Text,
@@ -100,8 +93,6 @@ namespace _68857_Artem_Haliv_task6
                 tbnarrat.Text,
                 int.Parse(tbdurat.Text)
             );
-
-            //Call AddPaperBook method to add the book
             ab.AddPaperBook(ab.Title, ab.Author, ab.Category, ab.Type, ab.Narrator, Convert.ToInt32(ab.Duration));
 
             MessageBox.Show("Audio Book added successfully!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);

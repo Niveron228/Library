@@ -21,8 +21,6 @@ namespace _68857_Artem_Haliv_task6
             Category = category;
             Type = type;
         }
-        //btw i removed library class because it was useless.I hope it won't be a mistake)
-  
             public virtual  void AddPaperBook(string title, string author, string category, string type, string isbn, int numberOfPages)
             {
                 PaperBook paperBook = new PaperBook(title, author, category, type, isbn, numberOfPages);
